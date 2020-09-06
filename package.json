@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "textalive-api": "^0.14.4"
+    "textalive-app-api": "0.0.2"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
