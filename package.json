@@ -1,18 +1,26 @@
 {
   "name": "textalive-app-lyric-tiles",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "マウス操作に反応するインタラクティブなTextAlive App APIの作例",
   "main": "index.js",
   "scripts": {
     "build-dev": "parcel src/index.html --out-dir dev",
-    "build": "parcel build src/index.html --public-url ./ --out-dir htdocs --no-source-maps",
-    "clean": "del-cli dev htdocs"
+    "build": "parcel build src/index.html --public-url ./ --out-dir docs --no-source-maps",
+    "clean": "del-cli .cache dev docs"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TextAliveJp/textalive-app-lyric-tiles.git"
+  },
+  "keywords": [
+    "textalive"
+  ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "homepage": "https://github.com/TextAliveJp/textalive-app-lyric-tiles#readme",
   "dependencies": {
-    "textalive-app-api": "0.0.2"
+    "textalive-app-api": "^0.1.1"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
