@@ -20,7 +20,7 @@
   "license": "MIT",
   "homepage": "https://github.com/TextAliveJp/textalive-app-lyric-tiles#readme",
   "dependencies": {
-    "textalive-app-api": "^0.1.2"
+    "textalive-app-api": "^0.2.0"
   },
   "devDependencies": {
     "del-cli": "^3.0.1",
