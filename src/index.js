@@ -21,6 +21,7 @@ class Main
     _initPlayer ()
     {
         var player = new Player({
+            // トークンは https://developer.textalive.jp/profile で取得したものを使う
             app: { token: "test" },
             mediaElement: document.querySelector("#media")
         });
