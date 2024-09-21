@@ -3,11 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "description": "マウス操作に反応するインタラクティブなTextAlive App APIの作例",
-  "main": "index.js",
   "scripts": {
-    "build-dev": "parcel src/index.html --out-dir dev",
-    "build": "parcel build src/index.html --public-url ./ --out-dir docs --no-source-maps",
-    "clean": "del-cli .cache dev docs"
+    "build-dev": "parcel src/index.html --dist-dir dev",
+    "build": "npm run clean && parcel build src/index.html --public-url ./ --dist-dir docs --no-source-maps",
+    "clean": "del-cli .parcel-cache dev docs"
   },
   "repository": {
     "type": "git",
@@ -20,11 +19,12 @@
   "license": "MIT",
   "homepage": "https://github.com/TextAliveJp/textalive-app-lyric-tiles#readme",
   "dependencies": {
-    "textalive-app-api": "^0.2.0"
+    "textalive-app-api": "^0.4.0"
   },
   "devDependencies": {
-    "del-cli": "^3.0.1",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-clean-dist": "0.0.6"
+    "buffer": "^6.0.3",
+    "del-cli": "^5.1.0",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
   }
 }
