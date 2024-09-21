@@ -22,7 +22,7 @@ class Main
     {
         var player = new Player({
             // トークンは https://developer.textalive.jp/profile で取得したものを使う
-            app: { token: "test" },
+            app: { token: "eaFarhRWbobOZTyd" },
             mediaElement: document.querySelector("#media")
         });
         
