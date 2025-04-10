@@ -38,16 +38,19 @@ class Main
     {
         if (! app.songUrl)
         {
-            // ラテルネ / その心に灯る色は
-            this._player.createFromSongUrl("http://www.youtube.com/watch?v=bMtYf3R0zhY", {
+            // パレードレコード / きさら
+            this._player.createFromSongUrl("https://piapro.jp/t/GCgy/20250202202635", {
                 video: {
-                    // 音楽地図訂正履歴: https://songle.jp/songs/2121404/history
-                    beatId: 3953902,
-                    repetitiveSegmentId: 2099660,
-                    // 歌詞タイミング訂正履歴: https://textalive.jp/lyrics/www.youtube.com%2Fwatch%3Fv=bMtYf3R0zhY
-                    lyricId: 52093,
-                    lyricDiffId: 5177
-                }
+                // 音楽地図訂正履歴
+                beatId: 4694279,
+                chordId: 2830734,
+                repetitiveSegmentId: 2946482,
+            
+                // 歌詞URL: https://piapro.jp/t/FJ5N
+                // 歌詞タイミング訂正履歴: https://textalive.jp/lyrics/piapro.jp%2Ft%2FGCgy%2F20250202202635
+                lyricId: 67814,
+                lyricDiffId: 20658
+                },
             });
         }
 
